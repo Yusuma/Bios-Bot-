@@ -1,7 +1,6 @@
 const Discord = require("discord.js");
 const YTDL = require("ytdl-core");
 
-const TOKEN = "NDEyOTQwMjk5OTIxMjYwNTQ0.DWXJNw.kmpkomR36HFhpCyFfA6uzL2IBD8"
 const PREFIX = "<"
 
 function play(connection, message) {
@@ -223,4 +222,4 @@ bot.on("message", function(message) {
     
 });
 
-bot.login(TOKEN);
+bot.login(process.env.TOKEN);
