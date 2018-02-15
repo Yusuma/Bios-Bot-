@@ -121,7 +121,7 @@ bot.on("message", function(message) {
                     .setColor('#86d1ff')
                     .setThumbnail("https://cdn.discordapp.com/attachments/410079349190950913/413606558682054656/Bios1.png")
                     .addField(">command_list_load...", "Liste des commandes")
-                    .addField(">link_command...","**<forum** lien vers le forum Faeris\n**<points** tableau de point des factions\n**<factions** liens vers les factions\n**<ygoprol** lien ygopro_link bétâ")
+                    .addField(">link_command...","**<forum** lien vers le forum Faeris\n**<points** tableau de point des factions\n**<factions** liens vers les factions\n**<ygoprol** lien ygopro_link bétâ\n**<ygopro** lien ygopro")
                     .addField(">system_command...","**<help** liste de commandes\n**<info** information sur le Bios\n")
                     .addField(">games_command...", "**<ask** jeux de question réponse\n**<toss** pile/face\n**<roll** lancer une dé a 6 faces")
                     .setFooter("- Bios vous remercie d'avoir fait appel à ses services !")
