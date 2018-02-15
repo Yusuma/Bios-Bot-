@@ -139,7 +139,7 @@ bot.on("message", function(message) {
                 console.log("forum");
                 break;
                 
-             case "factions":
+            case "factions":
                 message.channel.send(">data_access: garanted...");
                     let factions_embed = new Discord.RichEmbed()
                     .setColor('#86d1ff')
@@ -150,7 +150,7 @@ bot.on("message", function(message) {
                 console.log("factions");
                 break;
                 
-              case "ygoprol":
+            case "ygoprol":
                 message.channel.send(">data_access: garanted...");
                     let ygoprol_embed = new Discord.RichEmbed()
                     .setColor('#86d1ff')
@@ -169,6 +169,17 @@ bot.on("message", function(message) {
                 message.channel.send(points_embed);
                 console.log("points");
                 break;
+
+            case "ygopro":
+                message.channel.send(">data_access: garanted...");
+                    let ygopro_embed = new Discord.RichEmbed()
+                    .setColor('#86d1ff')
+                    .addField(">url_send_message...", "https://openload.co/f/N9lJnDFaj70/ygopro-1.033.D-Percy.exe")
+                    .setFooter("- Bios vous remercie d'avoir fait appel à ses services !")
+                message.channel.send(ygopro_embed);
+                console.log("ygopro");
+                break;
+            
 
             //syst command
             case "info":
