@@ -123,7 +123,6 @@ bot.on("message", function(message) {
                     .addField(">command_list_load...", "Liste des commandes")
                     .addField(">link_command...","**<forum** lien vers le forum Faeris\n**<points** tableau de point des factions")
                     .addField(">system_command...","**<help** liste de commandes\n**<info** information sur le Bios\n")
-                    .addField(">music_command...", "**<play + url** lire une musique sur youtube\n**<skip** passer à la musique suivante\n**<stop** arreter la musique actuelle")
                     .addField(">games_command...", "**<ask** jeux de question réponse\n**<toss** pile/face\n**<roll** lancer une dé a 6 faces")
                     .setFooter("- Bios vous remercie d'avoir fait appel à ses services !")
                 message.channel.send(help_embed);
@@ -179,45 +178,7 @@ bot.on("message", function(message) {
                 message.channel.send(dice[Math.floor(Math.random() * dice.length)]);
                 console.log("roll");
                 break;
-            //music command
-            case "play":
-                if (!args[1]) {
-                    message.channel.send("Ajoutez un lien SVP !");
-                    return;
-                }
-                
-                if (!message.member.voiceChannel) {
-                    message.channel.send("Vous devez vous connecter à un salon Vocal !");
-                    return;
-                }
-
-                if (!servers[message.guild.id]) servers[message.guild.id] = {
-                    queue: []
-                };
-
-                var server = servers[message.guild.id];
-
-                server.queue.push(args[1]);
-
-                if (!message.guild.voiceConnection) message.member.voiceChannel.join().then(function(connection) {
-                    play(connection, message);
-                });
-                console.log("play");
-                break;
-        
-            case "skip":
-                var server = servers[message.guild.id];
-
-                if (server.dispatcher) server.dispatcher.end();
-                console.log("skip");
-                break;
-
-            case"stop":
-                var server = servers[messgae.guild.id];
-                
-                if (messgae.guild.id.voiceConnection) message.guild.voiceConnection.disconnect();
-                console.log("stop");
-                break;
+           
         }
     
 });
