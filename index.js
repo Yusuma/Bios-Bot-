@@ -1,20 +1,6 @@
 const Discord = require("discord.js");
-const YTDL = require("ytdl-core");
 
 const PREFIX = "<"
-
-function play(connection, message) {
-    var server = servers[message.guild.id];
-
-    server.dispatcher = connection.playStream(YTDL(server.queue[0], {filter: "audioonly"}));
-
-    server.queue.shift();
-
-    server.dispatcher.on("end", function() {
-        if (server.queue[0]) play(connection, message);
-        else connection.disconnect();
-    });
-}
 
 //fortunes variable setting
 let fortunes = [
@@ -54,6 +40,16 @@ var servers = {};
 bot.on("ready", function() {
     bot.user.setPresence({ game:{name: '<help | Bios Services', type: 0}});
     console.log("Ready");
+});
+
+bot.on("guildMemberAdd", member =>{
+    let role = member.guild.find("name", "Sans Faction");
+    member.guild.channels.find("name", "discussions_generales").send('${member.user.username} viens de rejoindre le server !')
+    member.addRole(role)
+});
+
+bot.on("guildMemberRemove", member =>{
+    member.guild.channels.find("name","discussions_generales").send('${member.user.username} viens de nous quitter !')
 });
 
 bot.on("message", function(message) {
