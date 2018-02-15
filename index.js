@@ -121,7 +121,7 @@ bot.on("message", function(message) {
                     .setColor('#86d1ff')
                     .setThumbnail("https://cdn.discordapp.com/attachments/410079349190950913/413606558682054656/Bios1.png")
                     .addField(">command_list_load...", "Liste des commandes")
-                    .addField(">link_command...","**<forum** lien vers le forum Faeris\n**<points** tableau de point des factions")
+                    .addField(">link_command...","**<forum** lien vers le forum Faeris\n**<points** tableau de point des factions\n**<factions** liens vers les factions")
                     .addField(">system_command...","**<help** liste de commandes\n**<info** information sur le Bios\n")
                     .addField(">games_command...", "**<ask** jeux de question réponse\n**<toss** pile/face\n**<roll** lancer une dé a 6 faces")
                     .setFooter("- Bios vous remercie d'avoir fait appel à ses services !")
@@ -137,6 +137,17 @@ bot.on("message", function(message) {
                     .setFooter("- Bios vous remercie d'avoir fait appel à ses services !")
                 message.channel.send(forum_embed);
                 console.log("forum");
+                break;
+                
+             case "factions":
+                message.channel.send(">data_access: garanted...");
+                    let factions_embed = new Discord.RichEmbed()
+                    .setColor('#86d1ff')
+                    .addField(">url_send_message: Datenshi...", "http://faeris.forumactif.com/t340-faction-datenshi-les-heritiers-des-samurais")
+                    .addField(">url_send_message: Laishmabal...", "http://faeris.forumactif.com/t344-faction-laishmabal-les-guerriers-de-l-orient#4819")
+                    .setFooter("- Bios vous remercie d'avoir fait appel à ses services !")
+                message.channel.send(factions_embed);
+                console.log("factions");
                 break;
 
             case "points":
