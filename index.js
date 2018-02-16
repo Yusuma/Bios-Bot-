@@ -10,6 +10,10 @@ let fortunes = [
     "Je suis un robot je n'ai pas la réponse àvotre requête.",
     "pourquoi ?",
     ">request: denied...",
+    "parceque !",
+    "why not ?!",
+    "Je te hais !",
+    "Bisous sur la fesse gauche.",
 ];
 
 //coin variable setting
