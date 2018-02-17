@@ -117,6 +117,22 @@ bot.on("message", function(message) {
         message.channel.send("Papa ?!");
     }
 
+    if (message.content == "Yus") {
+        message.channel.send("No comment.");
+    }
+
+    if (message.content == "Yusu") {
+        message.channel.send("No comment.");
+    }
+
+    if (message.content == "Yusuma") {
+        message.channel.send("No comment.");
+    }
+
+    if (message.content == "Sinna") {
+        message.channel.send("C'est qui ?");
+    }
+
         //Commands
         if(!message.content.startsWith(PREFIX)) return;
 
