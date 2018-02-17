@@ -130,7 +130,7 @@ bot.on("message", function(message) {
     }
 
     if (message.content == "Sinna") {
-        message.channel.send("Je ne lui doit rien à elle !");
+        message.channel.send("Je ne lui dois rien à elle !");
     }
 
         //Commands
