@@ -63,6 +63,7 @@ bot.on("message", function(message) {
     if (message.content == "Yop") {
         message.channel.send("Bonjour à vous !");
     }
+
     if (message.content == "RPG") {
         message.channel.send(">data_access: garanted...");
             let rpg_embed = new Discord.RichEmbed()
@@ -107,6 +108,15 @@ bot.on("message", function(message) {
     if (message.content == "Eidolon") {
         message.channel.send("**MLG ! You are a Pro Player Bruv !**");
     }
+
+    if (message.content == "Kikhay") {
+        message.channel.send("Papa ?!");
+    }
+
+    if (message.content == "Kik") {
+        message.channel.send("Papa ?!");
+    }
+
         //Commands
         if(!message.content.startsWith(PREFIX)) return;
 
