@@ -66,6 +66,11 @@ bot.on("message", function(message) {
         message.channel.send("Bonjour à vous !");
         console.log("Yop");
     }
+    
+    if (message.content == "captain obvious") {
+        message.channel.send("Merci captain obvious !");
+        console.log("captain obvious");
+    }
 
     if (message.content == "RPG") {
         message.channel.send(">data_access: garanted...");
