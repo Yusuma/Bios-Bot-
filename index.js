@@ -130,7 +130,7 @@ bot.on("message", function(message) {
     }
 
     if (message.content == "Sinna") {
-        message.channel.send("C'est qui ?");
+        message.channel.send("Déesse créatrice !");
     }
 
         //Commands
