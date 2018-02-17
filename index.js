@@ -14,6 +14,8 @@ let fortunes = [
     "why not ?!",
     "Je te hais !",
     "Bisous sur la fesse gauche.",
+    "Google est ton amis.",
+    "On compte jusqu'à 3 et à 3 trois je te baffe ?!"
 ];
 
 //coin variable setting
@@ -121,7 +123,7 @@ bot.on("message", function(message) {
     }
 
     if (message.content == "Kikhay") {
-        message.channel.send("Papa ?!");
+        message.channel.send("Bruno-Sama !!!");
         console.log("Kikhay");
     }
 
@@ -148,6 +150,11 @@ bot.on("message", function(message) {
     if (message.content == "Sinna") {
         message.channel.send("Je ne lui dois rien à elle !");
         console.log("Sinna");
+    }
+
+    if (message.content == "Bios") {
+        message.channel.send("A votre service !");
+        console.log("Bios");
     }
 
         //Commands
