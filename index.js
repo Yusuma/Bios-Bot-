@@ -62,6 +62,7 @@ bot.on("message", function(message) {
     //Message spéciaux
     if (message.content == "Yop") {
         message.channel.send("Bonjour à vous !");
+        console.log("Yop");
     }
 
     if (message.content == "RPG") {
@@ -71,66 +72,82 @@ bot.on("message", function(message) {
             .addField(">url_send_message...", "https://laurierleaderking.wixsite.com/tocthegamefr")
             .setFooter("- Bios vous remercie d'avoir fait appel à ces services !")
         message.channel.send(_embed); 
+        console.log("RPG");
     }
 
     if (message.content == "Qli") {
         message.channel.send(":nauseated_face:");
+        console.log("Qli");
     }
 
     if (message.content == "gg") {
         message.channel.send(":sunglasses:");
+        console.log("gg");
     }
 
     if (message.content == "Trickstar") {
         message.channel.send("*U no da wei !*");
+        console.log("Trickstar");
     }
 
     if (message.content == "Odd Eyes") {
         message.channel.send("Dragon Powaaaa !");
+        console.log("Odd Eyes");
     }
 
     if (message.content == "Lightsworn") {
         message.channel.send("**MAY GOD BLESS YOU !!!**");
+        console.log("Ls");
     }
 
     if (message.content == "Cyberse") {
         message.channel.send("*Wat iz dat ?!*");
+        console.log("Cyberse");
     }
 
     if (message.content == "laisse poce bleu") {
         message.channel.send("https://i.imgur.com/t9Z5S3C.png");
+        console.log("Poce bleu");  
     }
 
     if (message.content == "Schuss") {
         message.channel.send("Adios Amigos ! Pépito !");
+        console.log("Schuss");
     }
 
     if (message.content == "Eidolon") {
         message.channel.send("**MLG ! You are a Pro Player Bruv !**");
+        console.log("Eido");
     }
 
     if (message.content == "Kikhay") {
         message.channel.send("Papa ?!");
+        console.log("Kikhay");
     }
 
     if (message.content == "Kik") {
         message.channel.send("Papa ?!");
+        console.log("Kik");
     }
 
     if (message.content == "Yus") {
         message.channel.send("No comment.");
+        console.log("Yus");
     }
 
     if (message.content == "Yusu") {
         message.channel.send("No comment.");
+        console.log("Yusu");
     }
 
     if (message.content == "Yusuma") {
         message.channel.send("No comment.");
+        console.log("Yusuma");
     }
 
     if (message.content == "Sinna") {
         message.channel.send("Je ne lui dois rien à elle !");
+        console.log("Sinna");
     }
 
         //Commands
