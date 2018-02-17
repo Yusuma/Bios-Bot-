@@ -130,7 +130,7 @@ bot.on("message", function(message) {
     }
 
     if (message.content == "Sinna") {
-        message.channel.send("Déesse créatrice !");
+        message.channel.send("Je ne lui doit rien à elle !");
     }
 
         //Commands
