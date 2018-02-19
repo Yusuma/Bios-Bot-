@@ -161,6 +161,11 @@ bot.on("message", function(message) {
         message.channel.send("A votre service !");
         console.log("Bios");
     }
+    
+    if (message.content == "YWNB") {
+        message.channel.send("https://cdn.discordapp.com/attachments/352172333194018818/415234555360968715/win.gif");
+        console.log("YWNB");
+    }
 
         //Commands
         if(!message.content.startsWith(PREFIX)) return;
