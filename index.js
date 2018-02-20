@@ -242,11 +242,11 @@ bot.on("message", function(message) {
             
             case "mse":
                 message.channel.send(">data_access: garanted...");
-                    let ygopro_embed = new Discord.RichEmbed()
+                    let mse_embed = new Discord.RichEmbed()
                     .setColor('#86d1ff')
                     .addField(">url_send_message...", "https://1drv.ms/u/s!Al7hRxQEPDk4oye-wZG3lLN-YHRj")
                     .setFooter("- Bios vous remercie d'avoir fait appel à ses services !")
-                message.channel.send(ygopro_embed);
+                message.channel.send(mse_embed);
                 console.log("mse");
                 break;
             
