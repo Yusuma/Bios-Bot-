@@ -48,15 +48,6 @@ bot.on("ready", function() {
     console.log("Ready");
 });
 
-bot.on("guildMemberAdd", member =>{
-    let role = member.guild.find("name", "Sans Faction");
-    member.guild.channels.find("name", "discussions_generales").send('${member.user.username} viens de rejoindre le server !')
-    member.addRole(role)
-});
-
-bot.on("guildMemberRemove", member =>{
-    member.guild.channels.find("name","discussions_generales").send('${member.user.username} viens de nous quitter !')
-});
 
 bot.on("message", function(message) {
     if (message.author.equals(bot.user))return;
@@ -70,16 +61,6 @@ bot.on("message", function(message) {
     if (message.content == "captain obvious") {
         message.channel.send("Merci captain obvious !");
         console.log("captain obvious");
-    }
-
-    if (message.content == "RPG") {
-        message.channel.send(">data_access: garanted...");
-            let rpg_embed = new Discord.RichEmbed()
-            .setColor('#86d1ff')
-            .addField(">url_send_message...", "https://laurierleaderking.wixsite.com/tocthegamefr")
-            .setFooter("- Bios vous remercie d'avoir fait appel à ces services !")
-        message.channel.send(_embed); 
-        console.log("RPG");
     }
 
     if (message.content == "Qli") {
@@ -181,7 +162,7 @@ bot.on("message", function(message) {
                     .setColor('#86d1ff')
                     .setThumbnail("https://cdn.discordapp.com/attachments/410079349190950913/413606558682054656/Bios1.png")
                     .addField(">command_list_load...", "Liste des commandes")
-                    .addField(">link_command...","**<forum** lien vers le forum Faeris\n**<points** tableau de point des factions\n**<factions** liens vers les factions\n**<ygoprol** lien ygopro_link bétâ\n**<ygopro** lien ygopro\n**<mse** lien magic set editor custom yusuma")
+                    .addField(">link_command...","**<forum** lien vers le forum Faeris\n**<points** tableau de point des factions\n**<factions** liens vers les factions\n**<ygoprol** lien ygopro_link bétâ\n**<ygopro** lien ygopro\n**<mse** lien magic set editor custom yusuma\n**<toc** Le RPG Faeris")
                     .addField(">system_command...","**<help** liste de commandes\n**<info** information sur le Bios\n")
                     .addField(">games_command...", "**<ask** jeux de question réponse\n**<toss** pile/face\n**<roll** lancer une dé a 6 faces")
                     .setFooter("- Bios vous remercie d'avoir fait appel à ses services !")
@@ -193,7 +174,7 @@ bot.on("message", function(message) {
                 message.channel.send(">data_access: garanted...");
                     let forum_embed = new Discord.RichEmbed()
                     .setColor('#86d1ff')
-                    .addField(">url_send_message...", "http://faeris.forumactif.com/")
+                    .addField(">url_send_message: Forum Faeris...", "http://faeris.forumactif.com/")
                     .setFooter("- Bios vous remercie d'avoir fait appel à ses services !")
                 message.channel.send(forum_embed);
                 console.log("forum");
@@ -214,7 +195,7 @@ bot.on("message", function(message) {
                 message.channel.send(">data_access: garanted...");
                     let ygoprol_embed = new Discord.RichEmbed()
                     .setColor('#86d1ff')
-                    .addField(">url_send_message...", "https://mega.nz/#!N6RQBCZR!UPINQF4pmyg520CnFvybYaBTbuj9ZcZFqzdPx1KTpXI")
+                    .addField(">url_send_message: Ygo Pro Link...", "https://mega.nz/#!N6RQBCZR!UPINQF4pmyg520CnFvybYaBTbuj9ZcZFqzdPx1KTpXI")
                     .setFooter("- Bios vous remercie d'avoir fait appel à ses services !")
                 message.channel.send(ygoprol_embed);
                 console.log("ygoprol");
@@ -224,7 +205,7 @@ bot.on("message", function(message) {
                 message.channel.send(">data_access: garanted...");
                     let points_embed = new Discord.RichEmbed()
                     .setColor('#86d1ff')
-                    .addField(">url_send_message...", "http://faeris.forumactif.com/h9-tableau-de-points-2")
+                    .addField(">url_send_message: Tableaux Points...", "http://faeris.forumactif.com/h9-tableau-de-points-2")
                     .setFooter("- Bios vous remercie d'avoir fait appel à ses services !")
                 message.channel.send(points_embed);
                 console.log("points");
@@ -234,7 +215,7 @@ bot.on("message", function(message) {
                 message.channel.send(">data_access: garanted...");
                     let ygopro_embed = new Discord.RichEmbed()
                     .setColor('#86d1ff')
-                    .addField(">url_send_message...", "https://openload.co/f/N9lJnDFaj70/ygopro-1.033.D-Percy.exe")
+                    .addField(">url_send_message: Ygo Pro...", "https://openload.co/f/N9lJnDFaj70/ygopro-1.033.D-Percy.exe")
                     .setFooter("- Bios vous remercie d'avoir fait appel à ses services !")
                 message.channel.send(ygopro_embed);
                 console.log("ygopro");
@@ -244,7 +225,17 @@ bot.on("message", function(message) {
                 message.channel.send(">data_access: garanted...");
                     let mse_embed = new Discord.RichEmbed()
                     .setColor('#86d1ff')
-                    .addField(">url_send_message...", "https://1drv.ms/u/s!Al7hRxQEPDk4oynCeKdhWpx_Id0G")
+                    .addField(">url_send_message: Magic set Editor...", "https://1drv.ms/u/s!Al7hRxQEPDk4oynCeKdhWpx_Id0G")
+                    .setFooter("- Bios vous remercie d'avoir fait appel à ses services !")
+                message.channel.send(mse_embed);
+                console.log("mse");
+                break;
+
+                case "toc":
+                message.channel.send(">data_access: garanted...");
+                    let mse_embed = new Discord.RichEmbed()
+                    .setColor('#86d1ff')
+                    .addField(">url_send_message: The Old Chronicles...", "http://www.mediafire.com/file/x5t9dc0091418wd/toc%20-%20ot%E9ka.exe")
                     .setFooter("- Bios vous remercie d'avoir fait appel à ses services !")
                 message.channel.send(mse_embed);
                 console.log("mse");
@@ -267,7 +258,7 @@ bot.on("message", function(message) {
             //game command
             case "ask":
                 if (args[1]) message.channel.send(fortunes[Math.floor(Math.random() * fortunes.length)]);
-                else message.channel.send("je ne peut pas lire cela !");
+                else message.channel.send("Veuillez posez une question !");
                 console.log("ask");
                 break;
 
