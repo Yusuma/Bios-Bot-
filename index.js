@@ -233,12 +233,12 @@ bot.on("message", function(message) {
 
                 case "toc":
                 message.channel.send(">data_access: garanted...");
-                    let mse_embed = new Discord.RichEmbed()
+                    let toc_embed = new Discord.RichEmbed()
                     .setColor('#86d1ff')
                     .addField(">url_send_message: The Old Chronicles...", "http://www.mediafire.com/file/x5t9dc0091418wd/toc%20-%20ot%E9ka.exe")
                     .setFooter("- Bios vous remercie d'avoir fait appel à ses services !")
-                message.channel.send(mse_embed);
-                console.log("mse");
+                message.channel.send(toc_embed);
+                console.log("toc");
                 break;
             
 
