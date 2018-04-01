@@ -30,13 +30,41 @@ let coin = [
 ];
 
 //dice variable setting
-let dice = [
+let dice6 = [
     "1",
     "2",
     "3",
     "4",
     "5",
     "6",
+];
+
+//dice variable setting
+let dice10 = [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+];
+
+//dice variable setting
+let dice100 = [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
 ];
 
 let bot = new Discord.Client();
@@ -267,11 +295,20 @@ bot.on("message", function(message) {
                 console.log("toss");
                 break;
 
-            case "roll":
-                message.channel.send(dice[Math.floor(Math.random() * dice.length)]);
+            case "roll6":
+                message.channel.send(dice6[Math.floor(Math.random() * dice6.length)]);
                 console.log("roll");
                 break;
-           
+                
+            case "roll10":
+                message.channel.send(dice10[Math.floor(Math.random() * dice10.length)]);
+                console.log("roll");
+                break;
+                
+            case "roll100":
+                message.channel.send(dice100[Math.floor(Math.random() * dice100.length)]);
+                console.log("roll");
+                break;
         }
     
 });
