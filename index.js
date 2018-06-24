@@ -264,7 +264,7 @@ bot.on("message", function(message) {
         }
     
 });
-/**
+
 bot.login(process.env.TOKEN);
 © 2018 GitHub, Inc.
 Terms
@@ -278,6 +278,6 @@ Training
 Shop
 Blog
 About
-Press h to open a hovercard with more details.*/
+Press h to open a hovercard with more details.
 
 
