@@ -1,4 +1,4 @@
-/**Skip to content
+*Skip to content
  
 Search or jump to…
 
@@ -14,7 +14,7 @@ Bios-Bot-/index.js
 298368f  on 5 Apr
 @Yusuma Yusuma Update index.js
      
-337 lines (286 sloc)  11.2 KB*/
+337 lines (286 sloc)  11.2 KB
 const Discord = require("discord.js");
 
 const PREFIX = "<"
