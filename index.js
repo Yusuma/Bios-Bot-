@@ -1,4 +1,4 @@
-Skip to content
+/**Skip to content
  
 Search or jump to…
 
@@ -14,95 +14,10 @@ Bios-Bot-/index.js
 298368f  on 5 Apr
 @Yusuma Yusuma Update index.js
      
-337 lines (286 sloc)  11.2 KB
+337 lines (286 sloc)  11.2 KB*/
 const Discord = require("discord.js");
 
 const PREFIX = "<"
-
-//fortunes variable setting
-let fortunes = [
-    "Oui",
-    "Non",
-    "42",
-    "Je suis un robot je n'ai pas la réponse àvotre requête.",
-    "pourquoi ?",
-    ">request: denied...",
-    "parceque !",
-    "why not ?!",
-    "Je te hais !",
-    "Bisous sur la fesse gauche.",
-    "Google est ton amis.",
-    "On compte jusqu'à 3 et à 3 trois je te baffe ?!"
-];
-
-//coin variable setting
-let coin = [
-    "pile",
-    "pile",
-    "pile",
-    "face",
-    "face",
-    "face",
-    "tranche lel !"
-];
-
-//dice variable setting
-let dice6 = [
-    "1",
-    "2",
-    "3",
-    "4",
-    "5",
-    "6",
-];
-
-//dice variable setting
-let dice10 = [
-    "1",
-    "2",
-    "3",
-    "4",
-    "5",
-    "6",
-    "7",
-    "8",
-    "9",
-    "10",
-];
-
-//dice variable setting
-let dice100 = [
-    "1",
-    "2",
-    "3",
-    "4",
-    "5",
-    "6",
-    "7",
-    "8",
-    "9",
-    "10",
-    "11",
-    "12",
-    "13",
-    "14",
-    "15",
-    "16",
-    "17",
-    "18",
-    "19",
-    "20",
-    "21",
-    "22",
-    "23",
-    "24",
-    "25",
-    "26",
-    "27",
-    "28",
-    "29",
-    "30",
-];
 
 let bot = new Discord.Client();
 
@@ -311,10 +226,10 @@ bot.on("message", function(message) {
             case "info":
                 message.channel.send(">data_access: garanted...");
                     let info_embed = new Discord.RichEmbed()
-                    .setColor('#86d1ff')
-                    .setThumbnail("https://cdn.discordapp.com/attachments/410079349190950913/413606558682054656/Bios1.png")
-                    .addField("**>BIOS-Bot©**", "**>program_author:** yusuma & kikhay\n\n**>patch_version:** 0.1.2\n\n**>birth_date:** 02/13/2018\n\n**>function_added:** interaction/jeux/musique/lien")
-                    .setFooter("- Bios vous remercie d'avoir fait appel à ses services !")
+						.setColor('#86d1ff')
+						.setThumbnail("https://cdn.discordapp.com/attachments/410079349190950913/413606558682054656/Bios1.png")
+						.addField("**>BIOS-Bot©**", "**>program_author:** yusuma & kikhay\n\n**>patch_version:** 0.1.2\n\n**>birth_date:** 02/13/2018\n\n**>function_added:** interaction/jeux/musique/lien")
+						.setFooter("- Bios vous remercie d'avoir fait appel à ses services !")
                 message.channel.send(info_embed);
                 console.log("info");
                 break;
@@ -333,23 +248,23 @@ bot.on("message", function(message) {
                 break;
 
             case "roll6":
-                message.channel.send(dice6[Math.floor(Math.random() * dice6.length)]);
+                message.channel.send(dice6[Math.floor(Math.random() * 6)]);
                 console.log("roll");
                 break;
                 
             case "roll10":
-                message.channel.send(dice10[Math.floor(Math.random() * dice10.length)]);
+                message.channel.send(dice10[Math.floor(Math.random() * 10)]);
                 console.log("roll");
                 break;
                 
             case "roll100":
-                message.channel.send(dice100[Math.floor(Math.random() * dice100.length)]);
+                message.channel.send(dice100[Math.floor(Math.random() * 100)]);
                 console.log("roll");
                 break;
         }
     
 });
-
+/**
 bot.login(process.env.TOKEN);
 © 2018 GitHub, Inc.
 Terms
@@ -363,4 +278,6 @@ Training
 Shop
 Blog
 About
-Press h to open a hovercard with more details.
+Press h to open a hovercard with more details.*/
+
+
