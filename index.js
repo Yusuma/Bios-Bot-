@@ -1,3 +1,20 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ @Yusuma Sign out
+0
+0 0 Yusuma/Bios-Bot-
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
+Bios-Bot-/index.js
+298368f  on 5 Apr
+@Yusuma Yusuma Update index.js
+     
+337 lines (286 sloc)  11.2 KB
 const Discord = require("discord.js");
 
 const PREFIX = "<"
@@ -294,10 +311,10 @@ bot.on("message", function(message) {
             case "info":
                 message.channel.send(">data_access: garanted...");
                     let info_embed = new Discord.RichEmbed()
-                    .setColor('#86d1ff')
-                    .setThumbnail("https://cdn.discordapp.com/attachments/410079349190950913/413606558682054656/Bios1.png")
-                    .addField("**>BIOS-Bot©**", "**>program_author:** yusuma & kikhay\n\n**>patch_version:** 0.1.2\n\n**>birth_date:** 02/13/2018\n\n**>function_added:** interaction/jeux/musique/lien")
-                    .setFooter("- Bios vous remercie d'avoir fait appel à ses services !")
+						.setColor('#86d1ff')
+						.setThumbnail("https://cdn.discordapp.com/attachments/410079349190950913/413606558682054656/Bios1.png")
+						.addField("**>BIOS-Bot©**", "**>program_author:** yusuma & kikhay\n\n**>patch_version:** 0.1.2\n\n**>birth_date:** 02/13/2018\n\n**>function_added:** interaction/jeux/musique/lien")
+						.setFooter("- Bios vous remercie d'avoir fait appel à ses services !")
                 message.channel.send(info_embed);
                 console.log("info");
                 break;
@@ -316,21 +333,36 @@ bot.on("message", function(message) {
                 break;
 
             case "roll6":
-                message.channel.send(dice6[Math.floor(Math.random() * dice6.length)]);
+                message.channel.send(dice6[Math.floor(Math.random() * 6)]);
                 console.log("roll");
                 break;
                 
             case "roll10":
-                message.channel.send(dice10[Math.floor(Math.random() * dice10.length)]);
+                message.channel.send(dice10[Math.floor(Math.random() * 10)]);
                 console.log("roll");
                 break;
                 
             case "roll100":
-                message.channel.send(dice100[Math.floor(Math.random() * dice100.length)]);
+                message.channel.send(dice100[Math.floor(Math.random() * 100)]);
                 console.log("roll");
                 break;
         }
     
 });
-
+/**
 bot.login(process.env.TOKEN);
+© 2018 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+API
+Training
+Shop
+Blog
+About
+Press h to open a hovercard with more details.*/
+
+
